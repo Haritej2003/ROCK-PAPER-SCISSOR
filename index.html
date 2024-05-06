@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock,Paper,Scissor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>ROCK PAPER SCISSOR</h1>
+    <br>
+    <div  id="container-1">
+        <input type="text" value="CHANCES LEFT=10" id="result" readonly>
+    <div><input type="text" id="timer" readonly>
+        <input type="button" value="Start" id="start-button" onclick="gameStart()"></div>
+    </div>
+    <div id="input-container">
+        <div id="div-1">
+            <h2>YOU</h2>
+
+            <img class="output-image" id="output-image1" src="https://www.clipartkey.com/mpngs/m/109-1094404_rock-paper-scissors-png.png"
+                alt="">
+            <div>
+                <button class="input-button" disabled id="button-1" onclick="clicked('button-1')"><img src="https://husseinhewehii.github.io/Rock_Paper_Scissors/rock.png"
+                        alt="rock"></button>
+                <button class="input-button" disabled id="button-2" onclick="clicked('button-2')"><img src="
+                    https://www.clipartkey.com/mpngs/m/109-1094264_rock-paper-scissors-png.png" alt="paper"></button>
+                <button class="input-button"disabled id="button-3" onclick="clicked('button-3')"><img src="
+                    https://www.clipartkey.com/mpngs/m/109-1094404_rock-paper-scissors-png.png" alt="scissor"></button>
+            </div>
+            <input type="text" id="score-1" class="score"  readonly>
+        </div>
+        <div id="div-2">
+            <h2>COMPUTER</h2>
+            <img class="output-image" id="output-image2" src="https://www.clipartkey.com/mpngs/m/109-1094404_rock-paper-scissors-png.png"
+                alt="">
+            <div><button class="input-button" disabled><img src="https://husseinhewehii.github.io/Rock_Paper_Scissors/rock.png"
+                        alt="rock"></button>
+                <button  class="input-button" disabled><img src="https://husseinhewehii.github.io/Rock_Paper_Scissors/rock.png"
+                        alt="paper"></button>
+                <button class="input-button" disabled><img src="https://husseinhewehii.github.io/Rock_Paper_Scissors/rock.png"
+                        alt="scissor"></button>
+            </div>
+            <input type="text" id="score-2" class="score" readonly>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
